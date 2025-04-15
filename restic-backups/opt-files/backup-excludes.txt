@@ -1,0 +1,19 @@
+/dev
+/media
+/mnt
+/proc
+/run
+/sys
+/tmp
+/var/tmp
+
+.config/Code/*Cache*
+.config/Cursor/*Cache*
+.cache
+.config/google-chrome/**/*Cache*/
+
+.bitmonero
+.local/share/Steam/steamapps
+Documents/Nostalgia\ Archive/Academia/cs162\ VMs
+Devel/WebKit
+Devel/linux-dev

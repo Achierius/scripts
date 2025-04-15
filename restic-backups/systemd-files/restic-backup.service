@@ -1,0 +1,9 @@
+[Unit]
+Description=Restic Backup
+
+[Service]
+Type=oneshot
+User=restic
+WorkingDirectory=/opt/restic-backup/scripts
+# flock is just to prevent overlapping runs
+ExecStart=/usr/bin/flock -n /opt/restic-backup/lock/restic-backup.lock ./do-restic-backup.sh

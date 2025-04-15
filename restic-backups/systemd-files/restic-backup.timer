@@ -1,0 +1,11 @@
+[Unit]
+Description=Periodically Run Backup
+
+[Timer]
+OnCalendar=*-*-* 03:00:00
+OnCalendar=*-*-* 15:00:00
+# Intentional: I would rather not weigh down my boot time. Obviously a risk if my computer is always off at 3AM
+Persistent=false
+
+[Install]
+WantedBy=timers.target
